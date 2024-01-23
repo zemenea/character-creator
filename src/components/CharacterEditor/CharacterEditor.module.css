@@ -4,10 +4,12 @@
 }
 
 .maxWidthWrapper {
+
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +26,30 @@
 }
 
 .characterWrapper {
+  height: 80%;
+  width: 35%;
+  position: fixed;
+  top: 110px;
+  right: 10px;
+  min-height: 500px;
 }
 
-.controlColumn {
+@media (width: 500px) {
+  .controlColumn {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+}
+
+
+.perspective {
+  height: 40%;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background: hsl(195deg, 20%, 86%);
+  opacity: 0.6;
+  z-index: -11;
 }
